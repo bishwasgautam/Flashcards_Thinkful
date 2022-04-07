@@ -28,16 +28,14 @@ describe("Decks", () => {
         "Default mock response. If you see this, you probably do not need this API call.",
     });
     createDeck.mockResolvedValue({
-      name:
-        "Default mock response. If you see this, you probably do not need this API call.",
+      name: "Default mock response. If you see this, you probably do not need this API call.",
     });
     deleteCard.mockResolvedValue({
       front:
         "Default mock response. If you see this, you probably do not need this API call.",
     });
     deleteDeck.mockResolvedValue({
-      name:
-        "Default mock response. If you see this, you probably do not need this API call.",
+      name: "Default mock response. If you see this, you probably do not need this API call.",
     });
     listDecks.mockResolvedValue([
       {
@@ -50,16 +48,14 @@ describe("Decks", () => {
         "Default mock response. If you see this, you probably do not need this API call.",
     });
     readDeck.mockResolvedValue({
-      name:
-        "Default mock response. If you see this, you probably do not need this API call.",
+      name: "Default mock response. If you see this, you probably do not need this API call.",
     });
     updateCard.mockResolvedValue({
       front:
         "Default mock response. If you see this, you probably do not need this API call.",
     });
     updateDeck.mockResolvedValue({
-      name:
-        "Default mock response. If you see this, you probably do not need this API call.",
+      name: "Default mock response. If you see this, you probably do not need this API call.",
     });
   });
 
@@ -195,7 +191,7 @@ describe("Decks", () => {
     readCard.mockResolvedValue(cardTen);
 
     const history = createMemoryHistory();
-    history.push("/decks/9/cards/10/edit");
+    history.push("/decks/8/cards/10/edit");
     render(
       <Router history={history}>
         <App />

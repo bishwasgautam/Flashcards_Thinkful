@@ -11,8 +11,7 @@ function Home() {
     listDecks()
     .then(response => setDecks(response));
   }, []);
-  
-  if(decks) {
+ 
     const deckList = decks.map(
       (deck, index) => <tr key={`${index}`}><td><DeckListItem deck={deck}/></td></tr>
     );
@@ -29,8 +28,7 @@ function Home() {
           </tbody>
         </table>
     );
-  }
-  return "Loading...";
+  
 }
 
 export default Home;
